@@ -17,8 +17,16 @@ class AcademicsPage{
         classbtn: () => cy.xpath("//a[normalize-space()='Class']"),
         classname: () => cy.get('[name=name]'),   
         classa1btn: () => cy.xpath("//label[normalize-space()='Section A1']"),
-         
         classsavebtn:()=> cy.contains("Save Class"),
+
+        //section
+        subjects: () => cy.xpath("//a[normalize-space()='Subjects']"),
+        subjectnameInput: () => cy.get('[name=subject_name]'),
+        subjectcodeInput: () => cy.get('[name=subject_code]'),
+        savesubjectbtn: () => cy.contains('Save Subject'),
+        
+         
+        
     }
 
     typeUsername(username){
@@ -44,6 +52,13 @@ class AcademicsPage{
         this.elements.classname().type("CLASS ONE");
         this.elements.classa1btn().click();
         this.elements.classsavebtn().click();
+    }
+    subjectmenu(){
+        
+        this.elements.subjects().click();
+        this.elements.subjectnameInput().type("English");
+        this.elements.subjectcodeInput().type("EN-123");
+        this.elements.savesubjectbtn().click();
     }
     }
     module.exports = new AcademicsPage();

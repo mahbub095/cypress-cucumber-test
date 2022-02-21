@@ -20,3 +20,6 @@ Then('Clicks academics and fillup section', ()=>{
 Then('Clicks class and fillup class', ()=>{
     academicsPage.academicsclass()
 })
+Then('Click subjects and fillup subjects', ()=>{
+    academicsPage.subjectmenu()
+}) 

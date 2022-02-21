@@ -11,3 +11,4 @@ Feature: Academics Section
         And A user clicks on the login button
         Then Clicks academics and fillup section
         Then Clicks class and fillup class
+        Then Click subjects and fillup subjects
