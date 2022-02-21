@@ -1,0 +1,5 @@
+{
+    "baseUrl": "https://freeschoolsoftware.in/spn4/infixedu/v6.5.0/login",
+    "chromeWebSecurity": false,
+    "testFiles": "**/*.feature"
+}
