@@ -9,7 +9,6 @@ Feature: Academics Section
         When A user enters the username "support@spondonit.com"
         And A user enters the password "12345678"
         And A user clicks on the login button
-          # And Click demolink
-        Then Clicks academics and fillup section
-        Then Clicks class and fillup class
-        Then Click subjects and fillup subjects
+        Then Clicks hr settings
+        Then Clicks hr department
+        Then add staff

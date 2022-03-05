@@ -8,6 +8,8 @@ Feature: Login page
         When A user enters the username "support@spondonit.com"
         And A user enters the password "12345678"
         And A user clicks on the login button
+        
+        # And Click demolink
         # Then the url will contains the /inventory subdirectory
     # Scenario: Blocked Login
     #     When A user enters the username "locked_out_user"

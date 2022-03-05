@@ -6,7 +6,7 @@ Feature: Admin Section
         Given A user opens a infixedu website
 
         Scenario: Check admin section
-        When A user enters the username "support@spondonit.com"
-        And A user enters the password "12345678"
+        When A user enters the username "info@haifacollege.org.il"
+        And A user enters the password "google@2021"
         And A user clicks on the login button
       

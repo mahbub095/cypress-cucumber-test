@@ -24,10 +24,10 @@ class AdminPage{
         quryname: () => cy.get('[name=name]'),
         qurassign: () => cy.get('[name=assigned]'),
         clickreference:()=> cy.xpath("//span[normalize-space()='Reference *']"),
-        clicknewspaper:()=> cy.xpath("(//li[@class='option'][normalize-space()='Newspaper'])[1]"),
+        clicknewspaper:()=> cy.xpath("(//li[@class='option'][normalize-space()='Newspaper'])"),
         
-        clicksource:()=> cy.xpath("(//span[normalize-space()='Source *']"),
-        clickinternet:()=> cy.xpath("(//li[@class='option'][normalize-space()='Internet'])[9]"),
+        clicksource:()=> cy.xpath("//span[normalize-space()='Source *']"),
+        clickinternet:()=> cy.xpath("(//li[@class='option'][normalize-space()='Internet'])"),
         clickclass:()=> cy.xpath("//span[normalize-space()='Class *']"),
         clickone:()=> cy.xpath("//li[normalize-space()='Class One']"),
         childInput: () => cy.get('[name=no_of_child]'),

@@ -1,6 +1,6 @@
 import {Given, When, And, Then} from 'cypress-cucumber-preprocessor/steps'
 const loginPage = require('../../pages/loginPage')
-const academicsPage = require('../../pages/academicsPage')
+const accountspage = require('../../pages/accountspage')
 
 Given('A user opens a infixedu website', () => {
     cy.visit('https://freeschoolsoftware.in/spn4/infixedu/v6.5.0/login')
@@ -14,18 +14,18 @@ And('A user enters the password {string}', (password)=>{
 And('A user clicks on the login button', ()=>{
     loginPage.clickLogin() 
 })
-
 // And ('Click demolink',()=>{
 //     loginPage.clickdemo()
 // })
-
-
-Then('Clicks academics and fillup section', ()=>{
-    academicsPage.academicsection()
+Then('Clicks accounts', ()=>{
+    accountspage.bankacc() 
 })
-Then('Clicks class and fillup class', ()=>{
-    academicsPage.academicsclass()
+Then('i will fillup chart of account income', ()=>{
+    accountspage.chartincomeacc() 
 })
-Then('Click subjects and fillup subjects', ()=>{
-    academicsPage.subjectmenu()
-}) 
+Then('i will fillup chart of account expense', ()=>{
+    accountspage.chartexpenseacc() 
+})
+Then('fillup income', ()=>{
+    accountspage.incomeacc() 
+})
