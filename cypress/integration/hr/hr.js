@@ -3,7 +3,7 @@ const loginPage = require('../../pages/loginPage')
 const hrpage = require('../../pages/hrpage')
 
 Given('A user opens a infixedu website', () => {
-    cy.visit('https://freeschoolsoftware.in/spn4/infixedu/v6.5.0/login')
+    cy.visit('https://freeschoolsoftware.in/spn4/infixedu/v6.4.3/login')
 })
 When('A user enters the username {string}', (username)=>{
     loginPage.typeUsername(username)

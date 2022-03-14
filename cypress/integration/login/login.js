@@ -2,7 +2,7 @@ import {Given, When, And, Then} from 'cypress-cucumber-preprocessor/steps'
 const loginPage = require('../../pages/loginPage')
 
 Given('A user opens a saucelabs website', () => {
-    cy.visit('https://freeschoolsoftware.in/spn4/infixedu/v6.5.0//login')
+    cy.visit('https://freeschoolsoftware.in/spn4/infixedu/v6.5.0/login')
 })
 When('A user enters the username {string}', (username)=>{
     loginPage.typeUsername(username)
